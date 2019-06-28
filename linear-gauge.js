@@ -26,25 +26,25 @@
     config = config || _config;
     drawGraph();
     drawRuler();
-    drawtarget();
     drawValue(value);
+    drawtarget();
   }
 
   function drawValue(value) {
-    var height = _canvas.height * 0.2;
+    var height = _canvas.height * 0.3;
     var width = mapRange(value);
     var x = 0;
-    var y = _canvas.height * 0.3;
+    var y = _canvas.height * 0.25;
 
     rect(x, y, width, height, _config.valueColor);
     strokeRect(x, y, width, height, "#000000");
   }
 
   function drawtarget() {
-    var height = _canvas.height * 0.6;
+    var height = _canvas.height * 0.8;
     var width = mapRange(_config.targetWidth);
     var x = mapRange(_config.target) - width / 2;
-    var y = _canvas.height * 0.1;
+    var y = 0;
 
     rect(x, y, width, height, _config.targetColor);
   }

@@ -12,7 +12,7 @@ linearGraph.config({
   unacceptableRangeColor: "#FF9999",
   valueColor: "#FFFFFF",
   targetColor: "#000000",
-  target: 30,
+  target: 40,
   targetWidth: 2,
   initialValue: 50
 });
